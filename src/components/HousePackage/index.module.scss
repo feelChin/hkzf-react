@@ -1,0 +1,28 @@
+@import '../../sass/theme.scss';
+
+.housepackage {
+	display: flex;
+	flex-wrap: wrap;
+	text-align: center;
+	background: $w;
+	.item {
+		margin: 2.6667vw 0;
+		width: 20%;
+		line-height: 6.1333vw;
+		i{
+			display: block;
+			line-height: 1.8;
+		}
+		.active {
+			color: $s;
+		}
+		.icon {
+			font-size: 6.1333vw;
+		}
+	}
+}
+
+
+
+
+

@@ -1,0 +1,48 @@
+@import '../../sass/theme.scss';
+
+.searchBox{
+    display: flex;
+    flex-direction: column;
+    .head{
+        padding: 5vw;
+        background: $f6;
+        display: flex;
+        input{
+            flex: 1;
+            height: 10.6667vw;
+            padding: 0 2.6667vw;
+            color: $c3;
+            background: $w;
+            @include mlr;
+            font-size: 3.8vw;
+            border-bottom: 2px solid $w;
+            transition: .5s;
+            &:focus{
+                border-color: $a ;
+            }
+        }
+        button{
+            height: 10.6667vw;
+            margin-left: 4vw;
+            padding: 0 4vw;
+            color: $w;
+            background: $a;
+        }
+    }
+    .flex{
+        flex: 1;
+        ul{
+            li{
+                padding: 2vw 5vw;
+                color: $c6;
+                font-size: 3.8vw;
+                &:nth-child(odd){
+                    background: $w;
+                }
+                &:nth-child(even){
+                    background: $f6;
+                }
+            }
+        }
+    }
+}  

@@ -1,0 +1,47 @@
+@import '../../sass/theme.scss';
+
+@keyframes erreo {
+    from {
+        @include ov0;
+        transform: translate3d(0,10%,0);
+    }
+    to {
+        @include ov1;
+        transform: translate3d(0,0,0);
+    }
+}
+
+.error{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    background: rgba(0,0,0,.6);
+    z-index: 99;
+    @include flex;
+    animation: erreo .3s forwards;
+    .errorBox{
+        max-width: 90%;
+        height: auto;
+        background: $f6;
+        color: $c6;
+        h5{
+            padding: 20px;
+            font-size: 16px;
+        }
+        .list{
+            display: flex;
+            button{
+                padding: 3vw;
+                flex: 1;
+                font-size: 15px;
+                &.active{
+                    background: $a;
+                    color: $w;
+                }
+            }
+        }
+    }
+}

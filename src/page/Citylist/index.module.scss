@@ -1,0 +1,59 @@
+@import '../../sass/theme.scss';
+
+.citylist {
+    .citylistFlex {
+        position: relative;
+        flex: 1;
+    }
+}
+
+.city {
+    .title {
+        font-size: 3.7333vw;
+        padding: 0 4vw;
+        color: $c9;
+        height: 9.6vw;
+        display: flex;
+        align-items: center;
+    }
+    .name {
+        width: 100%;
+        height: 13.3333vw;
+        padding: 0 4vw;
+        line-height: 13.3333vw;
+        border-bottom: 1px solid rgba(0, 0, 0, .1);
+        font-size: 4.2667vw;
+        color: $c3;
+        background: $w;
+        cursor: pointer;
+    }
+}
+
+.cityIndex {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    right: 1.3333vw;
+    z-index: 1;
+    height: 80%;
+    box-sizing: border-box;
+    top: 10%;
+    text-align: center;
+    .cityIndexItem {
+        flex: 1;
+        span{
+            font-size: 3.2vw;
+            width: 5vw;
+            height: 5vw;
+            border-radius: 50%;
+            @include flex;
+        }
+        .indexActive {
+            color: $w;
+            background-color: $s;
+            transition: .2s;
+        }
+    }
+}
+
+

@@ -1,0 +1,282 @@
+@import '../../sass/theme.scss';
+
+.houseDetail {
+    background: $f6;
+    display: flex;
+    flex-direction: column;
+}
+
+.flexOnce{
+    flex: 1;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.swiper {
+    width: 100%;
+    height: 72.8vw;
+    overflow: hidden;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+
+.flex{
+    display: flex;
+}
+
+.navHeader {
+    position: absolute;
+    z-index: 2;
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+}
+
+/* 房屋基础信息 */
+.info {
+    padding: 4vw;
+    background: #fff;
+}
+
+.infoTitle {
+    font-weight: normal;
+    font-size: 4.2667vw;
+    color: #333;
+}
+
+.tags {
+    position: relative;
+    margin: 2.6667vw 0;
+}
+
+.tag {
+    display: inline-block;
+    font-size: 3.2vw;
+    border-radius: 0.8vw;
+    padding: 1.0667vw 1.3333vw;
+    margin-right: 1.3333vw;
+    line-height: 3.2vw;
+}
+
+.tag1 {
+    color: #39becd;
+    background: #e1f5f8;
+}
+
+.tag2 {
+    color: #3fc28c;
+    background: #e1f5ed;
+}
+
+.tag3 {
+    color: #5aabfd;
+    background: #e6f2ff;
+}
+
+.infoPrice {
+    border-top: solid 1.0667vw $f6;
+    border-bottom: solid 1.0667vw $f6;
+    margin: 4vw 0;
+    padding: 4vw 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around
+}
+
+.infoPriceItem {
+    text-align: center;
+    color: #999;
+}
+
+.infoPriceItem :global(div) {
+    height: 6.9333vw;
+    line-height: 6.9333vw;
+}
+
+.infoPriceItem :global(div:first-child) {
+    color: #fa5741;
+    font-size: 4.8vw;
+    font-weight: bolder;
+}
+
+.month {
+    font-size: 3.2vw;
+    font-weight: normal;
+}
+
+.infoBasic {
+    font-size: 3.4667vw;
+    .flex{
+        &>div{
+            width: 50%;
+        }
+    }
+}
+
+.title {
+    display: inline-block;
+    color: #999;
+    padding-right: 1.3333vw;
+    line-height: 6.9333vw;
+}
+
+.map {
+    margin-top: 2.6667vw;
+    background: #fff;
+}
+
+.mapTitle {
+    margin: 0 3%;
+    line-height: 11.7333vw;
+    font-size: 3.4667vw;
+    color: #666;
+}
+
+.mapTitle :global(span) {
+    color: #333;
+}
+
+.mapContainer {
+    height: 38.6667vw;
+    overflow: hidden;
+    text-align: center;
+}
+
+.mapArrow {
+    background: url(http://map.baidu.com/fwmap/upload/r/map/fwmap/static/house/images/label.png) no-repeat;
+    position: absolute;
+    width: 2.9333vw;
+    height: 2.6667vw;
+    top: 6.1333vw;
+    left: 2.6667vw;
+    overflow: hidden;
+}
+
+.houseTitle {
+    font-weight: 600;
+    font-size: 4vw;
+    margin-bottom: 2.6667vw;
+    padding: 4vw 0;
+    border-bottom: solid 1.0667vw $f6;
+}
+
+.about {
+    margin-bottom: 2.6667vw;
+    padding: 0 2.6667vw;
+    background: #fff;
+}
+
+.set {
+    margin: 2.6667vw 0vw;
+    padding: 0 2.6667vw;
+    line-height: 150%;
+    background: #fff;
+}
+
+.titleEmpty {
+    padding: 2.6667vw 0;
+}
+
+.contact {
+    position: relative;
+}
+
+.user {
+    margin-bottom: 2.6667vw;
+    display: flex;
+}
+
+.user :global(img) {
+    width: 13.8667vw;
+    height: 13.8667vw;
+    margin: 2.6667vw 2.6667vw 0 0;
+}
+
+.useInfo {
+    padding: 4vw 0 0 1.3333vw;
+}
+
+.userAuth {
+    font-size: 3.2vw;
+    color: #fa5741;
+}
+
+.userAuth :global(.icon-auth) {
+    margin-right: 1.3333vw;
+}
+
+.userMsg {
+    position: absolute;
+    right: 4vw;
+    top: 5.3333vw;
+    color: #33be85;
+    border: solid 0.2667vw #33be85;
+    border-radius: 0.8vw;
+    padding: 0.8vw 4vw;
+}
+
+.descText {
+    line-height: 1.6;
+    padding: 2.6667vw 0;
+    color: #333;
+}
+
+.recommend {
+    margin: 2.6667vw 0 0 0;
+    padding: 0 4vw;
+    background: #fff;
+}
+
+.items :global(div:last-child) {
+    border-bottom: 0;
+}
+
+.likeItems{
+    &>div{
+        width: 100% !important;
+    }
+}
+
+.fixedBottom {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    height: 13.3333vw;
+    line-height: 13.3333vw;
+    border-top: 0.2667vw solid #cecece;
+    text-align: center;
+    font-size: 4.033vw;
+    color: $c9;
+    background-color: #fff;
+    .flex{
+        flex: 1;
+        @include flex;
+    }
+}
+
+.favorite {
+    margin-left: 1.6vw;
+}
+
+.favoriteImg {
+    width: 4.2667vw;
+}
+
+.fixedBottom :global(div:first-child) {
+    border-right: solid 0.2667vw #e8e8e9;
+}
+
+.fixedBottom :global(div:last-child) {
+    border-right: solid 0.2667vw #e8e8e9;
+    background-color: $a;
+}
+
+.telephone {
+    color: #fff;
+}

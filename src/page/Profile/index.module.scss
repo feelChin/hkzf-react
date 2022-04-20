@@ -1,0 +1,79 @@
+@import '../../sass/theme.scss';
+
+.profile {
+    background: $w;
+}
+
+.title {
+    min-height: 80vw;
+    position: relative;
+}
+
+.bg {
+    width: 100%;
+}
+
+.info {
+    position: absolute;
+    background: $w;
+    width: 85%;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%,-10%);
+    box-shadow: 0 0 1.2vw rgba(0,0,0,.1);
+    padding: 5vw 4vw 4vw;
+    text-align: center;
+    font-size: 3.4667vw;
+    border-top-left-radius: 8vw;
+    border-top-right-radius: 8vw;
+    .myIcon {
+        border-radius: 50%;
+        width: 90px;
+        height: 90px;
+        border: solid 5px $f6;
+    }
+    h5{
+        margin: 10px 0;
+    }
+    .login{
+        padding: 5px 15px;
+        display: inline-block;
+        background: $a;
+        color: $w;
+    }
+}
+
+
+.menuItems {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 5vw;
+
+    .menuItem {
+        width: 33.33%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 3.4667vw;
+        color: $c3;
+        margin: 3vw 0;
+
+        i {
+            font-size: 5.3333vw;
+            margin-bottom: 2.6667vw;
+
+            span {}
+        }
+    }
+}
+
+
+.ad {
+    text-align: center;
+    margin-top: 2.6667vw;
+
+    img {
+        width: 92%;
+    }
+}

@@ -1,0 +1,65 @@
+@import '../../sass/theme.scss';
+
+.search {
+  position: absolute;
+  top: 6.6667vw;
+  width: 90%;
+  left: 5%;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  border-radius: 1.3333vw;
+  height: 9.3333vw;
+  .location {
+    background: $w;
+    height: 100%;
+    padding: 0 2.6667vw;
+    display: flex;
+    align-items: center;
+    font-size: 3.4667vw;
+    border-top-left-radius: 0.8vw;
+    border-bottom-left-radius: 0.8vw;
+    i {
+      margin-left: 0.5333vw;
+      font-size: 3.2vw;
+      color: #7f7f80;
+    }
+  }
+  .form {
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    background: $w;
+    position: relative;
+    flex: 1;
+    height: 100%;
+    padding: 0 4vw;
+    display: flex;
+    align-items: center;
+    &:after {
+      content: '';
+      position: absolute;
+      width: 0.2667vw;
+      top: 0;
+      left: 0;
+      height: 100%;
+      background: rgba(0, 0, 0, .1);
+      transform: scale(.5);
+    }
+    i {
+      vertical-align: middle;
+      color: $c9;
+      font-size: 4vw;
+      margin-right: 2.6667vw;
+    }
+    span {
+      font-size: 3.4667vw;
+      color: $c9;
+    }
+  }
+
+  .iconMap {
+    margin-left: 2.6667vw;
+    font-size: 6.6667vw;
+    color: $w
+  }
+}

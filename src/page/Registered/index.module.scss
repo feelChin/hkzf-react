@@ -1,0 +1,39 @@
+@import '../../sass/theme.scss';
+
+.loginFlex{
+    padding: 7vw 5%;
+    width: 100%;
+    input{
+        width: 100%;
+        height: 10.9333vw;
+        font-size: 4vw;
+        border-bottom: 1px solid #f6f6f6;
+    }
+    button{
+        margin-top: 5vw;
+        width: 100%;
+        height: 10.6667vw;
+        background: $a;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $w;
+        letter-spacing: 0.8vw;
+    }
+    span{
+        font-size: 13px;
+        color: #666;
+        text-align: center;
+        display: block;
+        margin-top: 3vw;
+    }
+}
+
+.error{
+    font-size: 2.6667vw;
+    height: 6vw;
+    margin: 3vw 0;
+    color: red;
+    display: flex;
+    align-items: center;
+}

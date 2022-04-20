@@ -1,0 +1,33 @@
+@import '../../../sass/theme.scss';
+
+.filterTitle {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    height: 100%;
+    border-bottom: 0.2667vw solid #e4e6f0;
+    .item{
+        flex: 1;
+        @include flex;
+    }
+}
+  
+  .dropdown {
+    display: inline-block;
+    font-size: 4.2667vw;
+    background-color: #fff;
+    :global(.icon-arrow){
+        margin-left: 0.8vw;
+        color: $c9;
+        font-size: 3.2vw;
+    }
+  }
+
+  .selected {
+    color: $s;
+  }
+  
+  .selected :global(.icon-arrow) {
+    color: $s;
+  }
+  

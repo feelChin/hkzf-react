@@ -1,0 +1,16 @@
+@import '../../sass/theme.scss';
+
+.text {
+    font-size: 3.7333vw;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    min-width: 50%;
+    height: auto;
+    padding: 3vw 0;
+    background: $a;
+    color: $w;
+    z-index: 99991;
+    @include flex;
+}
